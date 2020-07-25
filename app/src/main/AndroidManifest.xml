@@ -19,7 +19,6 @@
         <activity android:name=".tipos_usuarios.Administrador" />
         <activity android:name=".tipos_usuarios.Gerente" />
         <activity android:name=".tipos_usuarios.Propietario" />
-        <activity android:name=".tipos_usuarios.Creador" />
         <activity android:name=".tipos_usuarios.PublicoGeneral" />
         <activity android:name=".Registrarse" />
         <activity android:name=".Ingresar" />

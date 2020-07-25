@@ -23,7 +23,6 @@ import cl.sulcansystem.restaurante.tipos_usuarios.Administrador;
 import cl.sulcansystem.restaurante.tipos_usuarios.BarTender;
 import cl.sulcansystem.restaurante.tipos_usuarios.Cajero;
 import cl.sulcansystem.restaurante.tipos_usuarios.Cocinero;
-import cl.sulcansystem.restaurante.tipos_usuarios.Creador;
 import cl.sulcansystem.restaurante.tipos_usuarios.Garzon;
 import cl.sulcansystem.restaurante.tipos_usuarios.Gerente;
 import cl.sulcansystem.restaurante.tipos_usuarios.JefeDeCocina;
@@ -76,35 +75,41 @@ public class Ingresar extends AppCompatActivity {
                             String Estatus = usuario.getEstatus();
 
                             if (usuario.getContraseña().equals(edtContraseña.getText().toString())) {
-                                if(Tipo_Usuario.equals("Creador") && Estatus.equals("Activo")){
-                                    Intent creador = new Intent(Ingresar.this, Creador.class);
-                                }
-                                else if(Tipo_Usuario.equals("Público en General") && Estatus.equals("Activo")){
-                                    Intent creador = new Intent(Ingresar.this, PublicoGeneral.class);
+                               if(Tipo_Usuario.equals("Público en General") && Estatus.equals("Activo")){
+                                    Intent publico_general = new Intent(Ingresar.this, PublicoGeneral.class);
+                                    startActivity(publico_general);
                                 }
                                 else if(Tipo_Usuario.equals("Propietario") && Estatus.equals("Activo")){
                                     Intent propietario = new Intent(Ingresar.this, Propietario.class);
+                                startActivity(propietario);
                                 }
                                 else if(Tipo_Usuario.equals("Gerente") && Estatus.equals("Activo")){
                                     Intent gerente = new Intent(Ingresar.this, Gerente.class);
+                                startActivity(gerente);
                                 }
                                 else if(Tipo_Usuario.equals("Administrador") && Estatus.equals("Activo")){
                                     Intent administrador = new Intent (Ingresar.this, Administrador.class);
+                                startActivity(administrador);
                                 }
                                 else if(Tipo_Usuario.equals("Jefe de Cocina") && Estatus.equals("Activo")){
                                     Intent jefe_de_cocina = new Intent(Ingresar.this, JefeDeCocina.class);
+                                startActivity(jefe_de_cocina);
                                 }
                                 else if(Tipo_Usuario.equals("Cocinero") && Estatus.equals("Activo")){
                                     Intent cocinero = new Intent(Ingresar.this, Cocinero.class);
+                                startActivity(cocinero);
                                 }
                                 else if(Tipo_Usuario.equals("Cajero") && Estatus.equals("Activo")){
                                     Intent cajero = new Intent(Ingresar.this, Cajero.class);
+                                startActivity(cajero);
                                 }
                                 else if(Tipo_Usuario.equals("Garzón") && Estatus.equals("Activo")){
                                     Intent garzon = new Intent(Ingresar.this, Garzon.class);
+                                startActivity(garzon);
                                 }
                                 else if(Tipo_Usuario.equals("BarTender") && Estatus.equals("Activo")){
                                     Intent bartender = new Intent(Ingresar.this, BarTender.class);
+                                startActivity(bartender);
                                 }
                                 Toast.makeText(Ingresar.this, "Bienvenido " + Nombre, Toast.LENGTH_SHORT).show();
                             } else {
