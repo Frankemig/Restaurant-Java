@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Restaurante</string>
+    <string name="slogan">Un Buen Lugar Para Compartir...!!!</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="nivel_de_seguridad">Nivel de Seguridad</string>
+    <string name="comuna">Comuna</string>
+    <string name="dirección">Dirección</string>
+    <string name="confirmar_contraseña">Confirmar Contraseña</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="n_mero_de_tel_fono">Número de Teléfono</string>
+    <string name="nombres_y_apellidos">Nombres y Apellidos</string>
+    <string name="mail">Mail</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="quienes_somos">Quienes Somos</string>
+    <string name="servicio_a_domicilio_nretiro_en_local">Servicio a Domicilio\nRetiro en Local</string>
+    <string name="bienvenido_a">Bienvenido (a)</string>
+    <string name="cont_ctanos">Contáctanos</string>
+    <string name="reservar_mesa_npedir_en_l_nea">Reservar Mesa\nPedir en Línea</string>
+    <string name="nombre_usuario">nombre_usuario</string>
+    <string name="procesos">Procesos</string>
+
+    <string-array name="tipos_usuarios">
+        <item>Creador</item>
+        <item>Propietario</item>
+        <item>Gerente</item>
+        <item>Administrador</item>
+        <item>Cajero</item>
+        <item>Jefe de Cocina</item>
+        <item>Cocinero</item>
+        <item>BarTender</item>
+        <item>Garzón</item>
+        <item>Público en General</item>
+    </string-array>
+
+</resources>

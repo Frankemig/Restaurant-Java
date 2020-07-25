@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    tools:context=".tipos_usuarios.Propietario">
+
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtBienvenido_propietario"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Bienvenido (a)"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+        <ImageView
+            android:id="@+id/usuarios_administrador"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_quienes_somos_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtusuarios_administrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Usuarios"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/usuarios_administrador"
+            app:layout_constraintStart_toStartOf="@+id/usuarios_administrador"
+            app:layout_constraintTop_toBottomOf="@+id/usuarios_administrador" />
+
+        <ImageView
+            android:id="@+id/vista_administrador"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_creatividad_red"
+            app:layout_constraintEnd_toStartOf="@+id/vista_cajero"
+            app:layout_constraintStart_toEndOf="@+id/usuarios_administrador"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtvista_jefe_cocina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vista\nAdministrador"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/vista_administrador"
+            app:layout_constraintStart_toStartOf="@+id/vista_administrador"
+            app:layout_constraintTop_toBottomOf="@+id/vista_administrador" />
+
+        <ImageView
+            android:id="@+id/recetas"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_creatividad_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtrecetas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recetas\nCosteos"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/recetas"
+            app:layout_constraintStart_toStartOf="@+id/recetas"
+            app:layout_constraintTop_toBottomOf="@+id/recetas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1070447961115",
+    "firebase_url": "https://restaurante-ea6bb.firebaseio.com",
+    "project_id": "restaurante-ea6bb",
+    "storage_bucket": "restaurante-ea6bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070447961115:android:940025ea90bbacf2ff44be",
+        "android_client_info": {
+          "package_name": "cl.sulcansystem.restaurante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070447961115-rlnjnosjocqtmrfh3trumhutqsn0choe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.sulcansystem.restaurante",
+            "certificate_hash": "98ca483a76fde7eb0a67bded17db8b276482b7ef"
+          }
+        },
+        {
+          "client_id": "1070447961115-j3gkv02s244tbds4rnp6g0aoh365a7ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrK70Aaid5Ay9g16HSTh5G3DNDKfOIF0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070447961115-j3gkv02s244tbds4rnp6g0aoh365a7ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

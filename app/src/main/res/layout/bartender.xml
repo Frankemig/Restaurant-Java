@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    tools:context=".tipos_usuarios.BarTender">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtBienvenido_propietario"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Bienvenido (a)"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        */Agregar aquí el RecyclerView - CardView con las opciones de BarTender
+        1.- Crear Producto
+        2.- Buscar Producto
+        3.- Establecer Stock Mínimo Insumos
+        4.- Ver Stock Insumos
+        5.- Ver Consumos
+        6.- Realizar Pedido de Insumos
+        7.- Actualizar Datos Personales
+        8.- Gestionar Pedidos /*
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

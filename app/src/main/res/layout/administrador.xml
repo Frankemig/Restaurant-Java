@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    tools:context=".tipos_usuarios.Propietario">
+
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtBienvenido_propietario"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:text="Bienvenido (a)"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/usuarios"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_quienes_somos_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/txtusuarios_administrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Usuarios"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/usuarios"
+            app:layout_constraintStart_toStartOf="@+id/usuarios"
+            app:layout_constraintTop_toBottomOf="@+id/usuarios" />
+
+        <ImageView
+            android:id="@+id/productos"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_creatividad_red"
+            app:layout_constraintEnd_toStartOf="@+id/procesos"
+            app:layout_constraintStart_toEndOf="@+id/usuarios"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtproductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Productos"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/productos"
+            app:layout_constraintStart_toStartOf="@+id/productos"
+            app:layout_constraintTop_toBottomOf="@+id/productos" />
+
+        <ImageView
+            android:id="@+id/procesos"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_creatividad_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtprocesos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/procesos"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/procesos"
+            app:layout_constraintStart_toStartOf="@+id/procesos"
+            app:layout_constraintTop_toBottomOf="@+id/procesos" />
+
+        <ImageView
+            android:id="@+id/vista_bartender"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="23dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_creatividad_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtusuarios_administrador" />
+
+        <TextView
+            android:id="@+id/txtvista_bartender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vista\nBarTender"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/vista_bartender"
+            app:layout_constraintStart_toStartOf="@+id/vista_bartender"
+            app:layout_constraintTop_toBottomOf="@+id/vista_bartender" />
+
+        <ImageView
+            android:layout_marginTop="23dp"
+            android:id="@+id/vista_jefe_cocina"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_creatividad_red"
+            app:layout_constraintEnd_toStartOf="@+id/vista_cajero"
+            app:layout_constraintStart_toEndOf="@+id/vista_bartender"
+            app:layout_constraintTop_toBottomOf="@+id/txtproductos" />
+
+        <TextView
+            android:id="@+id/txtvista_jefe_cocina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vista\nJefe Cocina"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/vista_jefe_cocina"
+            app:layout_constraintStart_toStartOf="@+id/vista_jefe_cocina"
+            app:layout_constraintTop_toBottomOf="@+id/vista_jefe_cocina" />
+
+        <ImageView
+            android:layout_marginTop="23dp"
+            android:id="@+id/vista_cajero"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_recepcionista_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtprocesos" />
+
+        <TextView
+            android:id="@+id/txtvista_cajero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vista\nCajero"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/vista_cajero"
+            app:layout_constraintStart_toStartOf="@+id/vista_cajero"
+            app:layout_constraintTop_toBottomOf="@+id/vista_cajero" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    tools:context=".tipos_usuarios.Cajero">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Salón 1"
+            android:background="@drawable/fondo_pantalla"
+            android:id="@+id/btnSalon1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Salón 2"
+            android:background="@drawable/fondo_pantalla"
+            android:id="@+id/btnSalon2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Bar"
+            android:background="@drawable/fondo_pantalla"
+            android:id="@+id/btnbar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="On-Line"
+            android:background="@drawable/fondo_pantalla"
+            android:id="@+id/btnon_line"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Delivery"
+            android:background="@drawable/fondo_pantalla"
+            android:id="@+id/btndelivery"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Llevar"
+            android:background="@drawable/fondo_pantalla"
+            android:id="@+id/btndeLlevar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="1"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="2"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="3"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="4"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="5"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="6"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="7"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="8"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa8"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="9"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa9"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="10"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa10"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="11"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa11"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="12"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa12"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="13"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa13"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="14"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa14"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="15"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa15"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="16"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa16"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="17"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa17"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="18"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa18"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="19"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa19"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="20"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa20"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="21"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa21"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="22"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa22"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="23"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa23"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="24"
+            android:background="@color/colorVerde"
+            android:id="@+id/btnmesa24"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
