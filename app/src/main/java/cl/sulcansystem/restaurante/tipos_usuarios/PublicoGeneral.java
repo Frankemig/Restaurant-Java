@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import cl.sulcansystem.restaurante.Ingresar;
 import cl.sulcansystem.restaurante.R;
@@ -16,42 +17,30 @@ public class PublicoGeneral extends AppCompatActivity {
     ImageView reservas, delivery, quienes_somos, contactanos, logoSulcan;
     TextView txtBienvenido, txtNombreUsuario, txtReserva, txtDelivery, txtQuienesSomos, txtContactanos;
 
-
+public static String txtUsuario = Ingresar.Nombre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.publico_general);
 
-        reservas = (ImageView) findViewById(R.id.reservas);
-        delivery = (ImageView) findViewById(R.id.delivery);
-        quienes_somos = (ImageView) findViewById(R.id.quienes_somos);
-        contactanos = (ImageView) findViewById(R.id.contactanos);
-        logoSulcan = (ImageView) findViewById(R.id.icon_logo_sulcan);
-        txtBienvenido = (TextView) findViewById(R.id.txtBienvenido);
-        txtNombreUsuario.setText(Ingresar.Nombre);
-        txtReserva = (TextView) findViewById(R.id.txtreservar);
-        txtDelivery = (TextView) findViewById(R.id.txtdelivery);
-        txtQuienesSomos = (TextView) findViewById(R.id.txtquienes_somos);
-        txtContactanos = (TextView) findViewById(R.id.txtcontactanos);
-
-        Typeface face = Typeface.createFromAsset(getAssets(),"fuentes/SCRIPTBL.TTF");
-        Typeface face2 = Typeface.createFromAsset(getAssets(),"Birds of Paradise © PERSONAL USE ONLY.ttf");
-        txtContactanos.setTypeface(face2);
-        txtQuienesSomos.setTypeface(face2);
-        txtDelivery.setTypeface(face2);
-        txtReserva.setTypeface(face2);
-        txtBienvenido.setTypeface(face);
+        txtNombreUsuario = (TextView)findViewById(R.id.nombreUsuario);
+        txtNombreUsuario.setText(txtUsuario);
+        reservas = (ImageView)findViewById(R.id.reservas);
+        delivery = (ImageView)findViewById(R.id.delivery);
+        quienes_somos = (ImageView)findViewById(R.id.quienes_somos);
+        contactanos = (ImageView)findViewById(R.id.contactanos);
+        logoSulcan = (ImageView)findViewById(R.id.icon_logo_sulcan);
+        txtBienvenido = (TextView)findViewById(R.id.bienvenidos);
+        txtReserva = (TextView)findViewById(R.id.txtreservar);
+        txtDelivery = (TextView)findViewById(R.id.txtdelivery);
+        txtQuienesSomos = (TextView)findViewById(R.id.txtquienes_somos);
+        txtContactanos = (TextView)findViewById(R.id.txtcontactanos);
 
         reservas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-            }
-        });
-        contactanos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+                Toast.makeText(PublicoGeneral.this, "Estás Entrando a Reservas", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -59,6 +48,7 @@ public class PublicoGeneral extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(PublicoGeneral.this, "Estás Entrando a Delivery", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -66,6 +56,15 @@ public class PublicoGeneral extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(PublicoGeneral.this, "Estás Entrando a Quienes Somos", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        contactanos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(PublicoGeneral.this, "Estás Entrando a Contáctanos", Toast.LENGTH_SHORT).show();
             }
         });
     }
