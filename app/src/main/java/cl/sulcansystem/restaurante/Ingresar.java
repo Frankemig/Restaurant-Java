@@ -76,8 +76,8 @@ public class Ingresar extends AppCompatActivity {
 
                             if (usuario.getContraseña().equals(edtContraseña.getText().toString())) {
                                if(Tipo_Usuario.equals("Público en General") && Estatus.equals("Activo")){
-                                    Intent publico_general = new Intent(Ingresar.this, PublicoGeneral.class);
-                                    startActivity(publico_general);
+                                    Intent menu = new Intent(Ingresar.this, Menu.class);
+                                    startActivity(menu);
                                     finish();
                                 }
                                 else if(Tipo_Usuario.equals("Propietario") && Estatus.equals("Activo")){
@@ -136,5 +136,12 @@ public class Ingresar extends AppCompatActivity {
                 });
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        Intent main = new Intent(Ingresar.this,MainActivity.class);
+        startActivity(main);
+        finish();
+        super.onBackPressed();
     }
 }

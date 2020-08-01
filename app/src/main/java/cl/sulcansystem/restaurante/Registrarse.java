@@ -88,7 +88,9 @@ public class Registrarse extends AppCompatActivity implements IPresenterView{
                                 startActivity(ingresar);
                                 finish();
                             }else{
-                                Toast.makeText(Registrarse.this, "Las Contraseñas No Coinciden...!!!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Registrarse.this, "Las Contraseñas No Coinciden...!!!\nVuelva a Intentarlo", Toast.LENGTH_SHORT).show();
+                                Intent registro = new Intent(Registrarse.this, Registrarse.class);
+                                startActivity(registro);
 
                             }
                         finish();
@@ -147,5 +149,11 @@ public class Registrarse extends AppCompatActivity implements IPresenterView{
         textView.setText("Muy Segura");
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Intent main = new Intent(Registrarse.this,MainActivity.class);
+        startActivity(main);
+        finish();
+        super.onBackPressed();
     }
+}

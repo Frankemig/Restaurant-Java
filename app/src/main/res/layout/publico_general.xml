@@ -26,12 +26,14 @@
             android:layout_marginTop="20dp"
             android:text="@string/bienvenido_a"
             android:textColor="@android:color/white"
-            android:textSize="50sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:textAlignment="center"
+            android:gravity="center"
             android:id="@+id/nombreUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,9 +64,9 @@
         <ImageView
 
             android:id="@+id/reservas"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
             android:foregroundGravity="center"
             android:src="@drawable/icon_reservas_red"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,16 +79,16 @@
             android:gravity="center"
             android:text="@string/reservar_mesa_npedir_en_l_nea"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/reservas"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtdelivery"
             app:layout_constraintEnd_toEndOf="@+id/reservas"
             app:layout_constraintStart_toStartOf="@+id/reservas" />
 
         <ImageView
             android:id="@+id/delivery"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
             android:foregroundGravity="center"
             android:src="@drawable/icon_delivery_red"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +101,7 @@
             android:gravity="center"
             android:text="@string/servicio_a_domicilio_nretiro_en_local"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/delivery"
             app:layout_constraintEnd_toEndOf="@+id/delivery"
             app:layout_constraintStart_toStartOf="@+id/delivery" />
@@ -107,9 +109,9 @@
         <ImageView
 
             android:id="@+id/quienes_somos"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
             android:foregroundGravity="center"
             android:src="@drawable/icon_nestro_equipo_red"
             app:layout_constraintStart_toStartOf="parent"
@@ -122,16 +124,16 @@
             android:gravity="center"
             android:text="@string/quienes_somos"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/quienes_somos"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtcontactanos"
             app:layout_constraintEnd_toEndOf="@+id/quienes_somos"
             app:layout_constraintStart_toStartOf="@+id/quienes_somos" />
 
         <ImageView
             android:id="@+id/contactanos"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
             android:foregroundGravity="center"
             android:src="@drawable/icon_contactanos_red"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,7 +146,7 @@
             android:gravity="center"
             android:text="@string/cont_ctanos"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/contactanos"
             app:layout_constraintEnd_toEndOf="@+id/contactanos"
             app:layout_constraintStart_toStartOf="@+id/contactanos" />

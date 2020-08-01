@@ -8,5 +8,6 @@
     <color name="colorVerde">#00FF00</color>
     <color name="colorAmarillo">#FFF000</color>
 
-
+    <color name="fondo_menu_desplegable">#7f333639</color>
+    <color name="fondo_actionBar">#000000</color>
 </resources>
