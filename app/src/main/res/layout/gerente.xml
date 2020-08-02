@@ -45,7 +45,7 @@
             android:layout_width="125dp"
             android:layout_height="100dp"
             android:padding="10dp"
-            android:src="@drawable/icon_quienes_somos_red"
+            android:src="@drawable/ic_piqueos"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,7 +66,7 @@
             android:layout_width="125dp"
             android:layout_height="100dp"
             android:padding="10dp"
-            android:src="@drawable/icon_creatividad_red"
+            android:src="@drawable/ic_piqueos"
             app:layout_constraintEnd_toStartOf="@+id/vista_cajero"
             app:layout_constraintStart_toEndOf="@+id/usuarios_administrador"
             app:layout_constraintTop_toTopOf="parent" />
@@ -88,7 +88,7 @@
             android:layout_width="125dp"
             android:layout_height="100dp"
             android:padding="10dp"
-            android:src="@drawable/icon_creatividad_red"
+            android:src="@drawable/ic_piqueos"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

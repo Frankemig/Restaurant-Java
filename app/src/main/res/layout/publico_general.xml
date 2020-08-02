@@ -68,7 +68,7 @@
             android:layout_height="150dp"
             android:layout_margin="20dp"
             android:foregroundGravity="center"
-            android:src="@drawable/icon_reservas_red"
+            android:src="@drawable/ic_reservas"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,7 +90,7 @@
             android:layout_height="150dp"
             android:layout_margin="20dp"
             android:foregroundGravity="center"
-            android:src="@drawable/icon_delivery_red"
+            android:src="@drawable/ic_delivery"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -113,7 +113,7 @@
             android:layout_height="150dp"
             android:layout_margin="20dp"
             android:foregroundGravity="center"
-            android:src="@drawable/icon_nestro_equipo_red"
+            android:src="@drawable/ic_idea_comodin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reservas"/>
 
@@ -135,7 +135,7 @@
             android:layout_height="150dp"
             android:layout_margin="20dp"
             android:foregroundGravity="center"
-            android:src="@drawable/icon_contactanos_red"
+            android:src="@drawable/ic_contactanos"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/delivery" />
 

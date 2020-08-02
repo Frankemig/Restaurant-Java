@@ -20,6 +20,8 @@
         app:srcCompat="@drawable/logoapp1" />
 
     <TextView
+        android:textAlignment="center"
+        android:layout_gravity="center"
         android:textStyle="bold"
         android:gravity="center"
         android:id="@+id/txt_fullName"

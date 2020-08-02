@@ -65,7 +65,7 @@
             android:layout_margin="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icon_aperitivos_red" />
+            app:srcCompat="@drawable/ic_aperitivos" />
 
         <TextView
             android:id="@+id/txt_aperitivo"
@@ -87,7 +87,7 @@
             android:layout_margin="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icon_vino_red" />
+            app:srcCompat="@drawable/ic_vino" />
 
         <TextView
             android:id="@+id/txt_vinos"
@@ -109,7 +109,7 @@
             app:layout_constraintEnd_toStartOf="@+id/vinos"
             app:layout_constraintStart_toEndOf="@+id/aperitivo"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icon_bebestibles_red" />
+            app:srcCompat="@drawable/ic_bebestibles" />
 
         <TextView
             android:id="@+id/txt_bebestibles"
@@ -131,7 +131,7 @@
             android:layout_margin="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_aperitivo"
-            app:srcCompat="@drawable/icon_entradas_red" />
+            app:srcCompat="@drawable/ic_entrada" />
 
         <TextView
             android:id="@+id/txt_entradas"
@@ -155,7 +155,7 @@
             app:layout_constraintEnd_toStartOf="@+id/postres"
             app:layout_constraintStart_toEndOf="@+id/entradas"
             app:layout_constraintTop_toBottomOf="@+id/txt_bebestibles"
-            app:srcCompat="@drawable/icon_fondos_red" />
+            app:srcCompat="@drawable/ic_fondos" />
 
         <TextView
             android:id="@+id/txt_fondos"
@@ -178,7 +178,7 @@
             android:layout_margin="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_vinos"
-            app:srcCompat="@drawable/icon_postres_cafe_red" />
+            app:srcCompat="@drawable/ic_postres_cafe" />
 
         <TextView
             android:id="@+id/txt_postres"
