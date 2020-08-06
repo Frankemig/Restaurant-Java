@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import cl.sulcansystem.restaurante.R;
+import cl.sulcansystem.restaurante.SingletonCar;
 import cl.sulcansystem.restaurante.modelo.Productos;
 import timber.log.Timber;
 
@@ -85,13 +87,17 @@ class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ItemViewHolder>
         TextView textId;
         ImageView imageView;
         TextView price;
+        ImageView car;
 
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
+
             title = itemView.findViewById(R.id.txTitle);
             textId = itemView.findViewById(R.id.tvId);
             price = itemView.findViewById(R.id.tvPrecio);
             imageView = itemView.findViewById(R.id.imageViewAvatar);
+            imageView = itemView.findViewById(R.id.imageViewAvatar);
+            car = itemView.findViewById(R.id.ivCar);
         }
 
         public void bind(Productos producto) {
@@ -103,10 +109,19 @@ class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ItemViewHolder>
             price.setText("$ " + producto.getPrecio());
 
             try {
-                Picasso.get().load(producto.getImagen()).resize(120, 120).centerCrop().into(imageView);
+                Picasso.get()
+                        .load(producto.getImagen())
+                        .resize(120, 120)
+                        .placeholder(R.drawable.no_image)
+                        .centerCrop()
+                        .into(imageView);
             } catch (Exception exc) {
                 Timber.e(exc);
             }
+            car.setOnClickListener(view -> {
+                SingletonCar.getInstance().add(producto);
+                Toast.makeText(car.getContext(), producto.getNombre() + " agregado al carrito", Toast.LENGTH_LONG).show();
+            });
         }
     }
 

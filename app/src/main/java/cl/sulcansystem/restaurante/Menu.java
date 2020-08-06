@@ -2,6 +2,7 @@ package cl.sulcansystem.restaurante;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -10,13 +11,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import cl.sulcansystem.restaurante.aperitivos.DisplayMessageActivity;
+import cl.sulcansystem.restaurante.aperitivos.ShoppingCarActivity;
 
 public class Menu extends AppCompatActivity {
 
     private static final String TAG = "Menu";
 
     TextView txt_aperitivos, txt_bebestibles, txt_vinos, txt_entradas, txt_fondos, txt_postres, menu;
-    ImageView aperitivos, bebestibles, vinos, entradas, fondos, postres, logo;
+    ImageView aperitivos, bebestibles, vinos, entradas, fondos, postres, logo, whatsapp;
 
 
     @Override
@@ -38,6 +40,7 @@ public class Menu extends AppCompatActivity {
         fondos = (ImageView)findViewById(R.id.fondos);
         postres = (ImageView)findViewById(R.id.postres);
         logo = (ImageView)findViewById(R.id.logo_pie);
+        whatsapp = findViewById(R.id.bt_whatsapp);
 
         Typeface face = Typeface.createFromAsset(getAssets(),"fuentes/SCRIPTBL.TTF");
         menu.setTypeface(face);
@@ -78,6 +81,15 @@ public class Menu extends AppCompatActivity {
             Log.d(TAG, "onClick: Postres_y_Cafés");
             start("Postres_y_Cafés");
         });
+
+        whatsapp.setOnClickListener(view -> {
+            Log.d(TAG, "whastapp");
+
+            Intent intent = new Intent(this, ShoppingCarActivity.class);
+            startActivity(intent);
+
+        });
+
     }
 
     private void start(String target) {
