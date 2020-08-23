@@ -42,7 +42,7 @@ public class ShoppingCarActivity extends AppCompatActivity {
 
         makeRequest.setOnClickListener(v -> {
             try {
-                Uri uri = Uri.parse("smsto" + "999");
+                Uri uri = Uri.parse("smsto" + "+56953827227");
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
                 intent.setPackage("com.whatsapp");
                 startActivity(intent);
@@ -50,5 +50,10 @@ public class ShoppingCarActivity extends AppCompatActivity {
                 Toast.makeText(this, "Debes tener whatsapp instalado para poder hacer el pedido", Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

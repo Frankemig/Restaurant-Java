@@ -4,16 +4,13 @@ public class Empleado {
     private int id;
     private String nombre;
     private String descripcion;
-    private int imagen;
+    private String imagen;
     private String puesto;
 
     public Empleado() {
     }
 
-    public Empleado(Empleado empleado) {
-    }
-
-    public Empleado(int id, String nombre, String descripcion, int imagen, String puesto) {
+    public Empleado(int id, String nombre, String descripcion, String imagen, String puesto) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -27,7 +24,7 @@ public class Empleado {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", imagen=" + imagen +
+                ", imagen='" + imagen + '\'' +
                 ", puesto='" + puesto + '\'' +
                 '}';
     }
@@ -56,11 +53,11 @@ public class Empleado {
         this.descripcion = descripcion;
     }
 
-    public int getImagen() {
+    public String getImagen() {
         return imagen;
     }
 
-    public void setImagen(int imagen) {
+    public void setImagen(String imagen) {
         this.imagen = imagen;
     }
 

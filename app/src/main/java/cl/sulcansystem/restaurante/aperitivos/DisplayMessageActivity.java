@@ -111,4 +111,9 @@ DisplayMessageActivity extends AppCompatActivity {
                 return key;
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }

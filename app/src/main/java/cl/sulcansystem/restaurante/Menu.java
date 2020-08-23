@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import cl.sulcansystem.restaurante.aperitivos.DisplayMessageActivity;
 import cl.sulcansystem.restaurante.aperitivos.ShoppingCarActivity;
+import cl.sulcansystem.restaurante.tipos_usuarios.PublicoGeneral;
 
 public class Menu extends AppCompatActivity {
 
@@ -98,13 +99,5 @@ public class Menu extends AppCompatActivity {
         bundle.putString("TARGET", target);
         intent.putExtras(bundle);
         startActivity(intent);
-    }
-
-    @Override
-    public void onBackPressed() {
-       /* Intent main = new Intent(Menu.this,MainActivity.class);
-        startActivity(main);
-        finish();*/
-        super.onBackPressed();
     }
 }

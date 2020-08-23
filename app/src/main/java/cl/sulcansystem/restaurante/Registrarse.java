@@ -84,15 +84,13 @@ public class Registrarse extends AppCompatActivity implements IPresenterView{
                             if(usuario.getContraseña().equals(edtConfirmacion.getText().toString())) {
                                 tabla_usuario.child(edtTelefono.getText().toString()).setValue(usuario);
                                 Toast.makeText(Registrarse.this, "Usuario Registrado Satisfactoriamente...!!!", Toast.LENGTH_SHORT).show();
-                                Intent ingresar = new Intent(Registrarse.this, Ingresar.class);
-                                startActivity(ingresar);
-                                finish();
-                            }else{
+                                Intent publico = new Intent(Registrarse.this, PublicoGeneral.class);
+                                startActivity(publico);
+                                }else{
                                 Toast.makeText(Registrarse.this, "Las Contraseñas No Coinciden...!!!\nVuelva a Intentarlo", Toast.LENGTH_SHORT).show();
                                 Intent registro = new Intent(Registrarse.this, Registrarse.class);
                                 startActivity(registro);
-
-                            }
+                                 }
                         finish();
                         }
                     }
@@ -151,7 +149,7 @@ public class Registrarse extends AppCompatActivity implements IPresenterView{
 
     @Override
     public void onBackPressed() {
-        Intent main = new Intent(Registrarse.this,MainActivity.class);
+        Intent main = new Intent(Registrarse.this, MainActivity.class);
         startActivity(main);
         finish();
         super.onBackPressed();

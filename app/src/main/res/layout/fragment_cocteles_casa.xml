@@ -19,7 +19,7 @@
             android:text="Aperitivos"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="16dp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

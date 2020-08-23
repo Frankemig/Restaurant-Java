@@ -139,9 +139,6 @@ public class Ingresar extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent main = new Intent(Ingresar.this,MainActivity.class);
-        startActivity(main);
-        finish();
-        super.onBackPressed();
+       super.onBackPressed();
     }
 }

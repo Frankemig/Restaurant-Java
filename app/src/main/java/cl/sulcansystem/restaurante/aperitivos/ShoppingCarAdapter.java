@@ -75,7 +75,7 @@ class ShoppingCarAdapter extends RecyclerView.Adapter<ShoppingCarAdapter.ItemVie
             try {
                 Picasso.get()
                         .load(producto.getImagen())
-                        .resize(120, 120)
+                        .resize(300, 200)
                         .placeholder(R.drawable.no_image)
                         .centerCrop()
                         .into(imageView);
@@ -84,7 +84,7 @@ class ShoppingCarAdapter extends RecyclerView.Adapter<ShoppingCarAdapter.ItemVie
             }
             car.setOnClickListener(view -> {
                 SingletonCar.getInstance().remove(producto);
-                Toast.makeText(car.getContext(), producto.getNombre() + " eliminado del carrito", Toast.LENGTH_LONG).show();
+                Toast.makeText(car.getContext(), "Se Eliminó " + producto.getNombre() + " del carrito", Toast.LENGTH_LONG).show();
                 notifyDataSetChanged();
             });
         }

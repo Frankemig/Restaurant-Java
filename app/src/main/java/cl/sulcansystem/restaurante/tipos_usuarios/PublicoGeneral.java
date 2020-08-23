@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import cl.sulcansystem.restaurante.Ingresar;
+import cl.sulcansystem.restaurante.MainActivity;
 import cl.sulcansystem.restaurante.Menu;
 import cl.sulcansystem.restaurante.QuienesSomos;
 import cl.sulcansystem.restaurante.R;
@@ -81,5 +82,12 @@ public static String txtUsuario = Ingresar.Nombre;
                 Toast.makeText(PublicoGeneral.this, "Estás Entrando a Contáctanos", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent main = new Intent(PublicoGeneral.this, MainActivity.class);
+        startActivity(main);
+        super.onBackPressed();
     }
 }

@@ -43,7 +43,7 @@ private List<Empleado>listaEmpleados;
         return listaEmpleados.size();
     }
 
-    public class EmpleadoViewHolder extends RecyclerView.ViewHolder implements cl.sulcansystem.restaurante.EmpleadoViewHolder {
+    public class EmpleadoViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView fotoEmpleado;
         private TextView titulo_item_empleado, nombre_empleado, descripcion_empleado;

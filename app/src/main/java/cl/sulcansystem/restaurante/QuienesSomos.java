@@ -3,6 +3,7 @@ package cl.sulcansystem.restaurante;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.List;
 
 import cl.sulcansystem.restaurante.modelo.BaseDatosEmpleados;
 import cl.sulcansystem.restaurante.modelo.Empleado;
+import cl.sulcansystem.restaurante.tipos_usuarios.PublicoGeneral;
 
 public class QuienesSomos extends AppCompatActivity {
     RecyclerView recycleEmpleado;
@@ -30,9 +32,9 @@ public class QuienesSomos extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-       /* Intent menu = new Intent(QuienesSomos.this, Menu.class);
-        startActivity(menu);
-        finish();*/
+        Intent publico = new Intent(QuienesSomos.this, PublicoGeneral.class);
+        startActivity(publico);
+        finish();
         super.onBackPressed();
     }
 }
