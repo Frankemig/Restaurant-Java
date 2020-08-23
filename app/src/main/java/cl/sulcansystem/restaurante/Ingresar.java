@@ -76,8 +76,8 @@ public class Ingresar extends AppCompatActivity {
 
                             if (usuario.getContraseña().equals(edtContraseña.getText().toString())) {
                                if(Tipo_Usuario.equals("Público en General") && Estatus.equals("Activo")){
-                                    Intent menu = new Intent(Ingresar.this, Menu.class);
-                                    startActivity(menu);
+                                    Intent publicoGeneral = new Intent(Ingresar.this, PublicoGeneral.class);
+                                    startActivity(publicoGeneral);
                                     finish();
                                 }
                                 else if(Tipo_Usuario.equals("Propietario") && Estatus.equals("Activo")){

@@ -1,7 +1,5 @@
 package cl.sulcansystem.restaurante.modelo;
 
-import java.util.Date;
-
 public class Usuario {
 
     private String Nombre;

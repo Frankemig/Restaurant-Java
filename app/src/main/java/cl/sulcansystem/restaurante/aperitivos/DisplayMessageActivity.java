@@ -20,7 +20,9 @@ import cl.sulcansystem.restaurante.R;
 import cl.sulcansystem.restaurante.modelo.Productos;
 import timber.log.Timber;
 
-public class DisplayMessageActivity extends AppCompatActivity {
+public class
+
+DisplayMessageActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Productos> productosList = new ArrayList<>();

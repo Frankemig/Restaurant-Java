@@ -102,9 +102,9 @@ public class Menu extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent main = new Intent(Menu.this,MainActivity.class);
+       /* Intent main = new Intent(Menu.this,MainActivity.class);
         startActivity(main);
-        finish();
+        finish();*/
         super.onBackPressed();
     }
 }

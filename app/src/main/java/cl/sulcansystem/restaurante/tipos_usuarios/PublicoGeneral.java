@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import cl.sulcansystem.restaurante.Ingresar;
 import cl.sulcansystem.restaurante.Menu;
+import cl.sulcansystem.restaurante.QuienesSomos;
 import cl.sulcansystem.restaurante.R;
 
 public class PublicoGeneral extends AppCompatActivity {
@@ -67,7 +68,8 @@ public static String txtUsuario = Ingresar.Nombre;
         quienes_somos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+            Intent quienesSomos = new Intent(PublicoGeneral.this, QuienesSomos.class);
+            startActivity(quienesSomos);
                 Toast.makeText(PublicoGeneral.this, "Estás Entrando a Quienes Somos", Toast.LENGTH_SHORT).show();
             }
         });

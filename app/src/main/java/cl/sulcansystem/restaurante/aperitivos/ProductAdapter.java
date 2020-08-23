@@ -41,7 +41,7 @@ class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ItemViewHolder>
                 return new FamilyViewHolder(inflate);
 
             default:
-                inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
+                inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_detalle, parent, false);
                 return new ProductViewHolder(inflate);
         }
     }
@@ -111,7 +111,7 @@ class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ItemViewHolder>
             try {
                 Picasso.get()
                         .load(producto.getImagen())
-                        .resize(120, 120)
+                        .resize(300, 200)
                         .placeholder(R.drawable.no_image)
                         .centerCrop()
                         .into(imageView);
@@ -120,7 +120,7 @@ class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ItemViewHolder>
             }
             car.setOnClickListener(view -> {
                 SingletonCar.getInstance().add(producto);
-                Toast.makeText(car.getContext(), producto.getNombre() + " agregado al carrito", Toast.LENGTH_LONG).show();
+                Toast.makeText(car.getContext(), "Se Agregó " + producto.getNombre() + " Al Carrito", Toast.LENGTH_LONG).show();
             });
         }
     }

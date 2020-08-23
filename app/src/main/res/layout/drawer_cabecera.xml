@@ -13,7 +13,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:id="@+id/image_details"
+        android:id="@+id/imageLogoCabecera"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:paddingTop="5dp"
