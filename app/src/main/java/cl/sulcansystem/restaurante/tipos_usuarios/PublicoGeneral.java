@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import cl.sulcansystem.restaurante.Contactanos;
 import cl.sulcansystem.restaurante.Ingresar;
 import cl.sulcansystem.restaurante.MainActivity;
 import cl.sulcansystem.restaurante.Menu;
@@ -71,23 +72,26 @@ public static String txtUsuario = Ingresar.Nombre;
             public void onClick(View view) {
             Intent quienesSomos = new Intent(PublicoGeneral.this, QuienesSomos.class);
             startActivity(quienesSomos);
-                Toast.makeText(PublicoGeneral.this, "Estás Entrando a Quienes Somos", Toast.LENGTH_SHORT).show();
+            finish();
+               // Toast.makeText(PublicoGeneral.this, "Estás Entrando a Quienes Somos", Toast.LENGTH_SHORT).show();
             }
         });
 
         contactanos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Toast.makeText(PublicoGeneral.this, "Estás Entrando a Contáctanos", Toast.LENGTH_SHORT).show();
+            Intent contactanos = new Intent(PublicoGeneral.this, Contactanos.class);
+            startActivity(contactanos);
+            finish();
+                //Toast.makeText(PublicoGeneral.this, "Estás Entrando a Contáctanos", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     @Override
     public void onBackPressed() {
-        Intent main = new Intent(PublicoGeneral.this, MainActivity.class);
-        startActivity(main);
+        Intent ingresar = new Intent(PublicoGeneral.this, Ingresar.class);
+        startActivity(ingresar);
         super.onBackPressed();
     }
 }

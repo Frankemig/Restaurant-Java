@@ -100,4 +100,12 @@ public class Menu extends AppCompatActivity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent publico = new Intent(Menu.this, PublicoGeneral.class);
+        startActivity(publico);
+        finish();
+        super.onBackPressed();
+    }
 }

@@ -66,7 +66,7 @@ private List<Empleado>listaEmpleados;
 
             try {
                 Picasso.get()
-                        .load(empleado.getImagen())
+                        .load(empleado.getImagenEmpleado())
                         .resize(150, 200)
                         .placeholder(R.drawable.ic_idea_comodin)
                         .centerCrop()

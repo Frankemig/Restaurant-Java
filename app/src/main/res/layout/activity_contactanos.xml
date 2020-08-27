@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    android:id="@+id/contactanos"
+    tools:context=".Contactanos">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/txtDondeEstamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donde Estamos"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mapa"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/mapa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDondeEstamos" />
+
+    <TextView
+        android:layout_margin="15dp"
+        android:id="@+id/txtRedesSiciales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuestras Redes Sociales"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapa" />
+
+    <TextView
+        android:id="@+id/txtcontacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Comunícate con Nosotros"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRedesSiciales"
+        app:srcCompat="@drawable/ic_face_original" />
+
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/instagram"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/txtRedesSiciales"
+        app:srcCompat="@drawable/ic_web2" />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_instagram2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRedesSiciales" />
+
+    <ImageView
+        android:id="@+id/whatsappConsultas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/facebook"
+        app:layout_constraintStart_toStartOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontacto"
+        app:srcCompat="@drawable/ic_consultas" />
+
+    <ImageView
+        android:id="@+id/whatsappPedidos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/instagram"
+        app:layout_constraintStart_toStartOf="@+id/instagram"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontacto"
+        app:srcCompat="@drawable/ic_delivery2" />
+
+    <ImageView
+        android:id="@+id/llamar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/whatsappPedidos"
+        app:layout_constraintStart_toEndOf="@+id/whatsappConsultas"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontacto"
+        app:srcCompat="@drawable/ic_telefonofijo" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="@+id/txtRedesSiciales"
+        app:layout_constraintTop_toBottomOf="@+id/llamar"
+        app:srcCompat="@drawable/ic_mail2" />
+
+    <ImageView
+        android:id="@+id/msn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRedesSiciales"
+        app:layout_constraintTop_toBottomOf="@+id/llamar"
+        app:srcCompat="@drawable/ic_msn2" />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_margin="20dp"
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sierra Bella N°1501 - Santiago Centro"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mapa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

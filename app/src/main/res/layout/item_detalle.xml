@@ -43,7 +43,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
-            android:src="@drawable/ic_carrito"
+            android:src="@drawable/ic_pedir_on_line"
             app:layout_constraintStart_toStartOf="@+id/imageViewAvatar"
             app:layout_constraintTop_toBottomOf="@+id/imageViewAvatar" />
 

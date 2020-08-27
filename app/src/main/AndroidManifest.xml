@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuienesSomos"></activity>
+        <activity android:name=".Contactanos"></activity>
+        <activity android:name=".QuienesSomos" />
         <activity android:name=".Menu" />
         <activity android:name=".tipos_usuarios.BarTender" />
         <activity android:name=".tipos_usuarios.Cocinero" />

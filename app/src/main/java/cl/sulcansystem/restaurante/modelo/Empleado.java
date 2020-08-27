@@ -4,17 +4,17 @@ public class Empleado {
     private int id;
     private String nombre;
     private String descripcion;
-    private String imagen;
+    private String imagenEmpleado;
     private String puesto;
 
     public Empleado() {
     }
 
-    public Empleado(int id, String nombre, String descripcion, String imagen, String puesto) {
+    public Empleado(int id, String nombre, String descripcion, String imagenEmpleado, String puesto) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.imagen = imagen;
+        this.imagenEmpleado = imagenEmpleado;
         this.puesto = puesto;
     }
 
@@ -24,7 +24,7 @@ public class Empleado {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", imagen='" + imagen + '\'' +
+                ", imagen='" + imagenEmpleado + '\'' +
                 ", puesto='" + puesto + '\'' +
                 '}';
     }
@@ -53,12 +53,12 @@ public class Empleado {
         this.descripcion = descripcion;
     }
 
-    public String getImagen() {
-        return imagen;
+    public String getImagenEmpleado() {
+        return imagenEmpleado;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setImagenEmpleado(String imagenEmpleado) {
+        this.imagenEmpleado = imagenEmpleado;
     }
 
     public String getPuesto() {

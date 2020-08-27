@@ -213,8 +213,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_shopping_car_24"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/ic_carrito"        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
 
