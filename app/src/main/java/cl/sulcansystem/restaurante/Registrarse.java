@@ -149,7 +149,7 @@ public class Registrarse extends AppCompatActivity implements IPresenterView{
 
     @Override
     public void onBackPressed() {
-        Intent main = new Intent(Registrarse.this, MainActivity.class);
+        Intent main = new Intent(Registrarse.this, Ingresar.class);
         startActivity(main);
         finish();
         super.onBackPressed();
