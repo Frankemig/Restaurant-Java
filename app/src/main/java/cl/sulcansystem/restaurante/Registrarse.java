@@ -72,7 +72,16 @@ public class Registrarse extends AppCompatActivity implements IPresenterView{
                 tabla_usuario.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if(snapshot.child(edtTelefono.getText().toString()).exists()){
+                        if(edtTelefono.getText().toString().isEmpty()) {
+                            Toast.makeText(Registrarse.this, "El Número de Teléfono es Requerido...", Toast.LENGTH_SHORT).show();
+                            mDialog.dismiss();
+                        }else if(edtTelefono.getText().toString().length()!=9) {
+                            Toast.makeText(Registrarse.this, "El Número de Teléfono Debe Tener 9 Dígitos...", Toast.LENGTH_SHORT).show();
+                            mDialog.dismiss();
+                        }else if(edtTelefono.getText().toString().startsWith("9")) {
+                            Toast.makeText(Registrarse.this, "El Número de Teléfono es Incorrecto...", Toast.LENGTH_SHORT).show();
+                            mDialog.dismiss();
+                        }else if (snapshot.child(edtTelefono.getText().toString()).exists()){
                             mDialog.dismiss();
                             Toast.makeText(Registrarse.this, "Número de Teléfono ya Registrado..!!!", Toast.LENGTH_SHORT).show();
                         }
