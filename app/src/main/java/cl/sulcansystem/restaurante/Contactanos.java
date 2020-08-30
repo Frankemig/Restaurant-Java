@@ -79,9 +79,19 @@ public class Contactanos extends AppCompatActivity {
         llamar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                dialPhoneNumber("+56958737826");
             }
         });
+    }
+
+
+
+    public void dialPhoneNumber(String phoneNumber) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     @Override
@@ -91,9 +101,10 @@ public class Contactanos extends AppCompatActivity {
         finish();
         super.onBackPressed();
     }
-public void link (String url){
+
+    public void link(String url) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
-}
+    }
 }
