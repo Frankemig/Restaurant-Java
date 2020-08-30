@@ -67,7 +67,9 @@ public class Contactanos extends AppCompatActivity {
         mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                String[] addresses = new String[1];
+                addresses[0] =  "reservas@bientaypa.cl";
+                composeEmail(addresses, "Reserva");
             }
         });
         msn.setOnClickListener(new View.OnClickListener() {
@@ -84,11 +86,19 @@ public class Contactanos extends AppCompatActivity {
         });
     }
 
-
-
     public void dialPhoneNumber(String phoneNumber) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    public void composeEmail(String[] addresses, String subject) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
