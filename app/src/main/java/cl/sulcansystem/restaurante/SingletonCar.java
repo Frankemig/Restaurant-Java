@@ -25,6 +25,7 @@ public class SingletonCar {
 
     public void add(Productos product) {
         productsList.add(product);
+        productsList.sort((productos, t1) -> productos.getNombre().compareTo(t1.getNombre()));
     }
 
     public List<Productos> getProductsList() {
