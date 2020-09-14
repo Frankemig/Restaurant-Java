@@ -53,6 +53,7 @@ class ShoppingCarAdapter extends RecyclerView.Adapter<ShoppingCarAdapter.ItemVie
         ImageView imageView;
         TextView price;
         ImageView car;
+        ImageView carAdd;
 
 
         public ItemViewHolder(@NonNull View itemView) {
@@ -64,6 +65,7 @@ class ShoppingCarAdapter extends RecyclerView.Adapter<ShoppingCarAdapter.ItemVie
             imageView = itemView.findViewById(R.id.imageViewAvatar);
             imageView = itemView.findViewById(R.id.imageViewAvatar);
             car = itemView.findViewById(R.id.ivCar);
+            carAdd = itemView.findViewById(R.id.ivCarAdd);
         }
 
         public void bind(Productos producto) {
@@ -84,7 +86,13 @@ class ShoppingCarAdapter extends RecyclerView.Adapter<ShoppingCarAdapter.ItemVie
             }
             car.setOnClickListener(view -> {
                 SingletonCar.getInstance().remove(producto);
-                Toast.makeText(car.getContext(), "Se Eliminó " + producto.getNombre() + " del carrito", Toast.LENGTH_LONG).show();
+                Toast.makeText(car.getContext(), "Se eliminó " + producto.getNombre() + " del carrito", Toast.LENGTH_LONG).show();
+                notifyDataSetChanged();
+            });
+
+            carAdd.setOnClickListener(view -> {
+                SingletonCar.getInstance().add(producto);
+                Toast.makeText(car.getContext(), "Se agregó " + producto.getNombre() + " del carrito", Toast.LENGTH_LONG).show();
                 notifyDataSetChanged();
             });
         }
