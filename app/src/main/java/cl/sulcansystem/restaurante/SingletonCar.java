@@ -18,7 +18,7 @@ public class SingletonCar {
     public static SingletonCar getInstance() {
         if(INSTANCE == null) {
             INSTANCE = new SingletonCar();
-            fakeData();
+           // fakeData();
         }
         return INSTANCE;
     }

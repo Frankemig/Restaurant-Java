@@ -31,7 +31,7 @@ class ShoppingCarAdapter extends RecyclerView.Adapter<ShoppingCarAdapter.ItemVie
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_detalle, parent, false);
+        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_carrito, parent, false);
         return new ItemViewHolder(inflate);
 
     }

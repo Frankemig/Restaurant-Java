@@ -20,6 +20,7 @@
         app:layout_constraintVertical_bias="0.2">
 
         <TextView
+            android:textStyle="bold"
             android:id="@+id/bienvenidos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:textStyle="bold"
             android:textAlignment="center"
             android:gravity="center"
             android:id="@+id/nombreUsuario"
@@ -73,6 +75,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:textStyle="bold"
             android:id="@+id/txtreservar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,9 +95,10 @@
             android:foregroundGravity="center"
             android:src="@drawable/ic_delivery"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:textStyle="bold"
             android:id="@+id/txtdelivery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,9 +106,9 @@
             android:text="@string/servicio_a_domicilio_nretiro_en_local"
             android:textColor="@android:color/white"
             android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@+id/delivery"
             app:layout_constraintEnd_toEndOf="@+id/delivery"
-            app:layout_constraintStart_toStartOf="@+id/delivery" />
+            app:layout_constraintStart_toStartOf="@+id/delivery"
+            app:layout_constraintTop_toBottomOf="@+id/delivery" />
 
         <ImageView
 
@@ -115,9 +119,10 @@
             android:foregroundGravity="center"
             android:src="@drawable/ic_idea_comodin"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reservas"/>
+            app:layout_constraintTop_toBottomOf="@+id/txtreservar" />
 
         <TextView
+            android:textStyle="bold"
             android:id="@+id/txtquienes_somos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -137,9 +142,10 @@
             android:foregroundGravity="center"
             android:src="@drawable/ic_contactanos"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/delivery" />
+            app:layout_constraintTop_toBottomOf="@+id/txtdelivery" />
 
         <TextView
+            android:textStyle="bold"
             android:id="@+id/txtcontactanos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,9 +153,9 @@
             android:text="@string/cont_ctanos"
             android:textColor="@android:color/white"
             android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@+id/contactanos"
             app:layout_constraintEnd_toEndOf="@+id/contactanos"
-            app:layout_constraintStart_toStartOf="@+id/contactanos" />
+            app:layout_constraintStart_toStartOf="@+id/contactanos"
+            app:layout_constraintTop_toBottomOf="@+id/contactanos" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,6 @@ public class LocalesDataBase {
     }
     static {
         int id = 0;
-        listaLocales.add(new Local(id++,"'Bien Taypá' - Restaurante Peruano y Chifa","Sierra Bella N° 1501", "Gastronomía Abis Alex Zavaleta León EIRL","76.905.471-5","225516570","+56948120976", "+569 58737826"));
+        listaLocales.add(new Local(id++,"'Bien Taypá' - Restaurante Peruano y Chifa","Sierra Bella N° 1501 - Santiago Centro", "Gastronomía Abis Alex Zavaleta León EIRL","76.905.471-5","225516570","+56948120976", "+56958737826"));
     }
 }
