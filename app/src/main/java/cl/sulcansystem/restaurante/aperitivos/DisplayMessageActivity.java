@@ -82,11 +82,6 @@ DisplayMessageActivity extends AppCompatActivity {
 
                 });
 
-
-                //arbolProductos.forEach((s, productos) -> Timber.d(s + " - " + productos));
-
-                //productosList.addAll(arbolProductos.get("Piscos_y_Sour´s"));
-                //Timber.d("productosList - size: " + productosList.size());
                 productAdapter.notifyDataSetChanged();
             }
 

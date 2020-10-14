@@ -67,7 +67,6 @@
             android:layout_height="100dp"
             android:padding="10dp"
             android:src="@drawable/ic_piqueos"
-            app:layout_constraintEnd_toStartOf="@+id/vista_cajero"
             app:layout_constraintStart_toEndOf="@+id/usuarios_administrador"
             app:layout_constraintTop_toTopOf="parent" />
 
